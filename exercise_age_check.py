@@ -1,3 +1,6 @@
+from traceback import print_tb
+
+
 def age_check():
     """
     Ejercicio 3 - Verificar Mayoría de Edad
@@ -18,4 +21,16 @@ def age_check():
         Para las entradas "-5" y "18", la salida esperada es:
         Entrada invalida
     """
-    pass
+    edad = int(input())
+    limite = int(input())
+
+    if edad <= 0:
+        print ("Entrada invalida")
+
+    elif edad >= limite:
+        print ("Eres mayor de edad")
+
+    else:
+        print ("Eres menor de edad")
+
+
